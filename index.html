@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<!--
+  ملفات الموقع (لازم يكونوا في نفس الفولدر):
+    index.html  -> المحتوى والنصوص
+    style.css   -> الألوان والتصميم
+    script.js   -> الحركة والأزرار
+    images/photo.jpg -> صورتك
+    cv.pdf      -> الـ CV بتاعك
+-->
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahmoud Nasr Mohamed | Front-End Developer</title>
+<meta name="description" content="Portfolio of Mahmoud Nasr Mohamed, Front-End Developer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== الشريط العلوي (اللوجو + روابط التنقل + زر الوضع الداكن) ===== -->
+<header>
+  <nav class="wrap" aria-label="Main">
+    <a href="#home" class="logo">Mahmoud<span></span></a>
+    <ul class="links" id="links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="tools">
+      <button class="icon-btn" id="theme" aria-label="Toggle dark and light mode">🌙</button>
+      <button class="icon-btn burger" id="burger" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<!-- ===== المحتوى الرئيسي ===== -->
+<main>
+<!-- ===== Home - المقدمة + الصورة + زر الـ CV ===== -->
+<section id="home">
+  <div class="wrap hero">
+    <div>
+      <div class="tag"><i></i> Open to work</div>
+      <h1>Hi, I'm Mahmoud Nasr Mohamed
+        <span class="role"><span id="typed"></span><span class="caret"></span></span>
+      </h1>
+      <p>I build fast, accessible and good-looking interfaces, backed by a solid foundation in programming logic and networking.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="cv.pdf" download></a>
+        <a class="btn btn-ghost" href="#contact">Contact me</a>
+      </div>
+    </div>
+    <div class="photo">
+      <!-- ===== صورتك الشخصية =====
+         1) حط صورتك داخل فولدر images
+         2) سمّيها photo.jpg (أو غيّر الاسم في src تحت)
+         لو الصورة مش موجودة بيظهر الشكل الافتراضي تلقائيًا -->
+      <div class="frame">
+        <div class="placeholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>
+          <b>Your photo here</b>
+        </div>
+        <img src="WhatsApp Image 2026-09-30 at 12.13.44 AM.jpeg" alt="Mahmoud Nasr Mohamed" onerror="this.remove()">
+      </div>
+      <div class="badge"><b>&lt;/&gt;</b> Front-End Developer</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About - نبذة عنك ===== -->
+<section id="about">
+  <div class="wrap about">
+    <div class="reveal">
+      <h2>About me</h2>
+      <p>I'm a front-end developer who enjoys turning designs into clean, responsive and interactive web pages. Building the part of a product that people actually see and touch is what keeps me curious.</p>
+      <p>My strength comes from the fundamentals: C++, object-oriented programming and data structures taught me to write organized, efficient code. My CCNA training gave me a clear view of how data travels across networks, which helps me build web apps that behave well in the real world.</p>
+    </div>
+    <div class="facts reveal">
+      <div class="fact"><span class="ic">🎨</span><div><h3>Interfaces first</h3><span>Responsive layouts, smooth interactions, accessible markup.</span></div></div>
+      <div class="fact"><span class="ic">🧠</span><div><h3>Strong fundamentals</h3><span>C++, OOP and data structures for clear problem solving.</span></div></div>
+      <div class="fact"><span class="ic">🌐</span><div><h3>Network aware</h3><span>CCNA knowledge of how the web works under the hood.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Skills - المهارات (النسبة في data-w وفي الرقم المكتوب) ===== -->
+<section id="skills">
+  <div class="wrap">
+    <h2 class="reveal">Skills</h2>
+    <p class="lead reveal">The tools and concepts I use to build things.</p>
+    <div class="skill-grid">
+      <div class="card reveal">
+        <div class="ic">💻</div><h3>Web Development</h3>
+        <div class="bar"><div class="row"><span>HTML5</span><span>90%</span></div><div class="track"><div class="fill" data-w="90"></div></div></div>
+        <div class="bar"><div class="row"><span>CSS3</span><span>85%</span></div><div class="track"><div class="fill" data-w="85"></div></div></div>
+        <div class="bar"><div class="row"><span>JavaScript</span><span>75%</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+      </div>
+      <div class="card reveal">
+        <div class="ic">🧩</div><h3>Computer Science &amp; Logic</h3>
+        <div class="bar"><div class="row"><span>C++</span><span>80%</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+        <div class="bar"><div class="row"><span>OOP</span><span>80%</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+        <div class="bar"><div class="row"><span>Data Structures</span><span>75%</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+      </div>
+      <div class="card reveal">
+        <div class="ic">📡</div><h3>Networking</h3>
+        <div class="bar"><div class="row"><span>CCNA</span><span>80%</span></div><div class="track"><div class="fill" data-w="80"></div></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Projects - المشاريع (انسخ كارت article وعدّل عليه) ===== -->
+<section id="projects">
+  <div class="wrap">
+    <h2 class="reveal">Projects</h2>
+    <p class="lead reveal">A few things I've built. Replace the demo content with your real projects.</p>
+    <div class="proj-grid">
+      <article class="card proj reveal">
+        <div class="thumb" style="--c1:#2f5bff"></div>
+        <div class="body">
+          <h3>Personal Landing Page</h3>
+          <p>A clean, responsive landing page with smooth scrolling and a dark mode switch.</p>
+          <div class="chips"><span>HTML</span><span>CSS</span><span>JS</span></div>
+          
+<div class="plinks">
+  <a href="https://website-ten-beryl-21.vercel.app/" target="_blank" rel="noopener">
+    Live Demo
+  </a>
+</div>
+
+        </div>
+      </article>
+      <article class="card proj reveal">
+        <div class="thumb" style="--c1:#12b981"></div>
+        <div class="body">
+          <h3>To-Do App</h3>
+          <p>Add, complete and delete tasks. Data is saved in the browser so nothing gets lost.</p>
+          <div class="chips"><span>JavaScript</span><span>DOM</span><span>LocalStorage</span></div>
+        
+<div class="plinks">
+  <a href="https://website-ten-beryl-21.vercel.app/" target="_blank" rel="noopener">
+    Live Demo
+  </a>
+  <a href="#" target="_blank" rel="noopener">
+    
+  </a>
+</div>
+
+        </div>
+      </article>
+      <article class="card proj reveal">
+        <div class="thumb" style="--c1:#f0883e"></div>
+        <div class="body">
+          <h3>Library System</h3>
+          <p>A console application that manages books and members using classes and data structures.</p>
+          <div class="chips"><span>C++</span><span>OOP</span><span>Data Structures</span></div>
+        
+<div class="plinks">
+  <a href="https://reda-portfolio-jade.vercel.app/" target="_blank" rel="noopener">
+    Live Demo
+  </a>
+</div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact - التواصل ===== -->
+<section id="contact">
+  <div class="wrap">
+    <h2 class="reveal">Get in touch</h2>
+    <p class="lead reveal">Have a project or an opportunity? Send me a message.</p>
+    <div class="contact">
+      <div class="info reveal">
+        <a href="tel:+201211802924"><span class="ic">📞</span><div><small>Phone</small><b>01211802924</b></div></a>
+        <a href="mailto:mahmoudpx90@gmail.com"><span class="ic">✉️</span><div><small>Email</small><b>mahmoudpx90@gmail.com</b></div></a>
+      </div>
+      <form class="card reveal" id="form" novalidate>
+        <div class="field"><label for="name">Name</label><input id="name" name="name" autocomplete="name" required><span class="err"></span></div>
+        <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err"></span></div>
+        <div class="field"><label for="msg">Message</label><textarea id="msg" name="msg" required></textarea><span class="err"></span></div>
+        <button class="btn btn-primary" type="submit">Send message</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== Footer - الحقوق وروابط السوشيال ===== -->
+
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
